@@ -104,7 +104,7 @@
                   <li><i class="fa-solid fa-arrow-right"></i> <strong>Edad:</strong> <span>27</span></li>
                   <li><i class="fa-solid fa-arrow-right"></i> <strong>Celular:</strong> <span>+56 9 3014 2365</span></li>
                   <li><i class="fa-solid fa-arrow-right"></i> <strong>Email:</strong> <span>joao23.1996@gmail.com</span></li>
-                  <li><i class="fa-solid fa-arrow-right"></i> <strong>WebSite:</strong> <span>www.example.com</span></li>
+                  <li><i class="fa-solid fa-arrow-right"></i> <strong>WebSite:</strong> <span><a href="//github.com/Joao-00">//github.com/Joao-00</a></span></li>
                 </ul>
               </div>
             </div>
@@ -113,7 +113,7 @@
               Analista programador en búsqueda de trabajo. Me destaco por trabajar en equipo, bajo presión, respetuoso,
               comprometido, creativo, con una actitud positiva y con ánimos de ampliar mis conocimientos. Actualmente
               estudio de manera autónoma para tener un aprendizaje continuo, con intenciones de seguir desarrollando
-              nuevas capacidades en el área, abierto a aprender si es necesario, con mucho interés en trabajos y tecnologías
+              nuevas capacidades en el área, abierto a aprender cualquier tipo de tecnologia, con mucho interés en trabajos y tecnologías
               relacionadas con el área de desarrollo web.
             </p>
           </div>
@@ -329,26 +329,31 @@
     
         <div class="row" data-aos="fade-in">
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" id="border-box">
-            <form role="form" class="php-email-form">
+            <form action="https://formsubmit.co/34f1f9c23550d10880efd0a168dba886" method="POST" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name"></label>
-                  <input type="text" class="form-control" id="name" placeholder="Nombre">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name"></label>
-                  <input type="email" class="form-control" id="email" placeholder="Email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                 </div>
               </div>
               <div class="form-group">
                 <label for="name"></label>
-                <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                <input type="text" class="form-control" name="subject" id="asunto" placeholder="Asunto">
               </div>
               <div class="form-group">
                 <label for="name"></label>
-                <textarea class="form-control" name="message" rows="10" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" name="coments" rows="10" placeholder="Mensaje" required></textarea>
               </div>
-              <div class="text-center"><a class="btn"><span></span>ENVIAR</a></div>
+              <div class="text-center">
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!! falta validar las casillas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <input type="submit" value="enviar" class="btn">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5503/">
+                <input type="hidden" name="_captcha" value="false">
+              </div>
             </form>
           </div>
         </div>
