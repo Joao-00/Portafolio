@@ -551,42 +551,26 @@ section {
 }
 
 
-.contact .php-email-form .btn {
+.contact .php-email-form #btnEnviar {
   font-weight: bold;
   background: #333 ;
   position: relative;
   padding: 10px 30px;
-  border: 2px solid #149ddd;
+  border-radius:50% ;
   margin: 10px;
   display: inline-block;
   color: #fff;
   letter-spacing: 2px;
-  text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
   overflow: hidden;
 }
 
-.contact .php-email-form .btn:hover {
-  color: #ffffff;
+.contact .php-email-form .text-center .btn:hover {
+  border: 2px solid #f4f6fd;
+  background-color: #878787;
 }
 
-.contact .php-email-form .btn span{
-  position: absolute;
-  display: block;
-  width: 0px;
-  height: 0px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: #149ddd;
-  transition: width 0.5s, height 0.5s;
-}
-
-.contact .php-email-form .btn:hover span{
-
-  width: 300px;
-  height: 300px;
-}
 
 
 

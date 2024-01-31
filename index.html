@@ -138,7 +138,7 @@
               <h4>Analista Programador</h4>
               <h5>2016 - 2019</h5>
               <p><em>Inacap, Santiago Sur</em></p>
-              <p>Preparacion en distintas areas de la informatica donde se incluyen creacion y manejo de BD en PHP, MySQL, Desarrollo web, HTML 5, CSS, TI, programacion en java, javascript, C#, C++, etc...</p>
+              <p>Preparacion en distintas areas de la informatica donde se incluyen creacion y manejo de BD en PHP, MySQL, Desarrollo web, HTML 5, CSS, TI, Java, JavaScript, C#, C++, etc...</p>
             </div>
             <div class="resume-item">
               <h4>Estudios Udemy</h4>
@@ -301,13 +301,13 @@
     
           <div class="card">
             <div class="face front">
-              <img src="assets/img/proyecto-tecnopolis.png" alt="projecto cuppon">
-              <h3>Projecto Tecnopolis</h3>
+              <img src="assets/img/proyecto_galeria.png" alt="projecto galeria">
+              <h3>Projecto Galeria</h3>
             </div>
             <div class="face back">
-              <h3>Projecto Tecnopolis</h3>
+              <h3>Projecto Galeria</h3>
               <div class="link">
-                <a href="https://github.com/Joao-00/desafio_tecnopolis.git">Link Proyecto</a>
+                <a href="https://github.com/Joao-00/Galeria-Prueba-CSS.git">Link Proyecto</a>
               </div>
             </div>
           </div>
@@ -326,38 +326,35 @@
         <div class="section-title">
           <h2>Contacto</h2><br>
         </div>
-    
         <div class="row" data-aos="fade-in">
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" id="border-box">
             <form action="https://formsubmit.co/34f1f9c23550d10880efd0a168dba886" method="POST" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name"></label>
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nombre" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="name"></label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="name"></label>
-                <input type="text" class="form-control" name="subject" id="asunto" placeholder="Asunto">
+                <input type="text" class="form-control" name="subject" id="asunto" placeholder="Asunto" required>
               </div>
               <div class="form-group">
                 <label for="name"></label>
-                <textarea class="form-control" name="coments" rows="10" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" name="coments" id="coments" rows="10" placeholder="Mensaje" required></textarea>
               </div>
               <div class="text-center">
-                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!! falta validar las casillas !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-                <input type="submit" value="enviar" class="btn">
+                <input type="submit" value="enviar" class="btn" id="btnEnviar" onclick="enviarFormulario()">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5503/">
                 <input type="hidden" name="_captcha" value="false">
               </div>
             </form>
           </div>
         </div>
-    
       </div>
     </section>
     <!-- ==================== End Contact ====================-->
@@ -378,28 +375,15 @@
     </footer>
     <!-- ==================== End Footer ====================-->
 
-    <!-- ==================== script bootstrap ==================== -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <!-- ==================== script // bootstrap ==================== -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
-    <script>
-      $(documentt.ready(function(e){
-        $('.btn').on('mouseenter', function(e){
-          x = e.pageX - $(this).offset().left;
-          y = e.pageY - $(this).offset().top;
-          $(this).find('span').css({top:y, left:x})
-        })
-        $('.btn').on('mouseout', function(e){
-          x = e.pageX - $(this).offset().left;
-          y = e.pageY - $(this).offset().top;
-          $(this).find('span').css({top:y, left:x})
-        })
-      }))
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      var nav = document.querySelector('nav');
+      const nav = document.querySelector('nav');
 
       window.addEventListener('scroll', function () {
         if (window.pageYOffset > 100) {
